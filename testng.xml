@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/bulutserel/hepsiburadaselenium">
+        <classes>
+            <class name="tests.MainPageTest">
+                <methods>
+                    <include name="navigateToHomePage"/>
+                    <include name="searchProduct"/>
+                </methods>
+            </class>
+            <class name="tests.ProductSearchPageTest">
+                <methods>
+                    <include name="clickGivenProduct"/>
+                </methods>
+            </class>
+            <class name="tests.ProductPageTest">
+                <methods>
+                    <include name="clickThumbsUpInFirstReview"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
